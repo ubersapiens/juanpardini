@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= content_for?(:title) ? yield(:title) : "2DINI Co. | Web Coffee Bike" %></title>
+    <meta name="description" content="2DINI Co. | Web Coffee Bike">
+    <meta name="2DINI" content="Rails developer. Lean startuper. Alps cyclist.">
+    <%= stylesheet_link_tag "application", :media => "all", "data-turbolinks-track" => true  %>
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true  %>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,200,300,400,900' rel='stylesheet' type='text/css'>
+    <script src="https://code.jquery.com/ui/1.9.2/jquery-ui.js"></script> 
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.js"></script>
+    <script src="/assets/raphael.2.1.0.min.js"></script>
+    <script src="/assets/justgage.1.0.1.min.js"></script>
+    <%= csrf_meta_tag %>
+    <%= yield(:head) %>
+  </head>
+  <body style="background-color:#fff;">
+    <%= yield %> 
+  </body>
+</html>
