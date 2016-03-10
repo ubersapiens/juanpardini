@@ -1,0 +1,26 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="row">
+      <div class="col-lg-4 text-center">
+        <p>72.2<span style="color:#33c3f0;font-weight:300;">KG</span></p>
+      </div>
+      <div class="col-lg-4 text-center">
+        <p><%= @average_watts %> <span style="color:#33c3f0;font-weight:300;">W</span></p>
+      </div>
+      <div class="col-lg-4 text-center">
+        <p><%= @average_speed %><span style="color:#33c3f0;font-weight:300;">KM/h</span></p>
+      </div>
+      <div class="col-lg-4 text-center">
+        <p><%= @average_heartrate %><span style="color:#33c3f0;font-weight:300;">BPM</span></p>
+      </div>
+      <div class="col-lg-4 text-center">
+        <p><%= @distance %> <span style="color:#33c3f0;font-weight:300;">KMs</span></p>
+      </div>
+      <div class="col-lg-4 text-center">
+        <p><%= @elevation %><span style="color:#33c3f0;font-weight:300;">MTS</span></p>
+      </div>
+    </div>
+    <div id="map"></div>
+  </div>
+</div>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?libraries=geometry&amp;sensor=false&callback=initialize"></script>
